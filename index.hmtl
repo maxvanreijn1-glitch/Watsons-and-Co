@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watsons & Co - Luxury Estate Agents</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h1>WATSONS & CO</h1>
+                    <p class="tagline">Luxury Estate Agents</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="cta-nav">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Discover Exceptional Properties</h2>
+            <p>Curated luxury homes and estates for the discerning buyer</p>
+            <button class="btn btn-primary">Explore Properties</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1512917774080-9b274b97b72f?w=1200&h=600&fit=crop" alt="Luxury Estate">
+        </div>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search by location...">
+                <select>
+                    <option>Property Type</option>
+                    <option>Residential</option>
+                    <option>Commercial</option>
+                    <option>Land</option>
+                </select>
+                <select>
+                    <option>Price Range</option>
+                    <option>£500k - £1m</option>
+                    <option>£1m - £2m</option>
+                    <option>£2m - £5m</option>
+                    <option>£5m+</option>
+                </select>
+                <button class="btn btn-search">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="featured-properties">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Properties</h2>
+                <p>Our most exclusive listings</p>
+            </div>
+            
+            <div class="properties-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=350&fit=crop" alt="Victorian Manor">
+                        <span class="price-badge">£2.5M</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Victorian Manor</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Surrey, England</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 6 Beds</span>
+                            <span><i class="fas fa-bath"></i> 4 Baths</span>
+                            <span><i class="fas fa-ruler"></i> 8,500 sqft</span>
+                        </div>
+                        <p class="description">Stunning period property with contemporary renovations set on 3 acres of manicured grounds.</p>
+                        <button class="btn btn-secondary">View Details</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=500&h=350&fit=crop" alt="Modern Penthouse">
+                        <span class="price-badge">£1.8M</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Modern Penthouse</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> London, England</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 4 Beds</span>
+                            <span><i class="fas fa-bath"></i> 3 Baths</span>
+                            <span><i class="fas fa-ruler"></i> 5,200 sqft</span>
+                        </div>
+                        <p class="description">Luxury penthouse with panoramic city views, high-end finishes, and private terrace.</p>
+                        <button class="btn btn-secondary">View Details</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45a003537e1f?w=500&h=350&fit=crop" alt="Country Estate">
+                        <span class="price-badge">£3.2M</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Country Estate</h3>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Cotswolds, England</p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 8 Beds</span>
+                            <span><i class="fas fa-bath"></i> 6 Baths</span>
+                            <span><i class="fas fa-ruler"></i> 12,000 sqft</span>
+                        </div>
+                        <p class="description">Prestigious country residence with extensive grounds, swimming pool, and guest house.</p>
+                        <button class="btn btn-secondary">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all">
+                <button class="btn btn-primary">View All Properties</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Watsons & Co</h2>
+                    <p>For over two decades, Watsons & Co has been the trusted name in luxury real estate. Our team of expert agents specializes in finding discerning clients their perfect homes.</p>
+                    <p>We pride ourselves on our attention to detail, market expertise, and commitment to excellence in every transaction.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Properties Sold</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Expert Agents</p>
+                        </div>
+                        <div class="stat">
+                            <h3>£2B+</h3>
+                            <p>Total Sales Value</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=500&h=600&fit=crop" alt="Office">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive real estate solutions</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Property Valuation</h3>
+                    <p>Expert appraisals of your property with detailed market analysis and comparable sales data.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Property Search</h3>
+                    <p>Personalized search services to find your ideal property in premium locations.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Sales & Lettings</h3>
+                    <p>Full representation for buying, selling, or letting your luxury property.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Investment Advice</h3>
+                    <p>Strategic guidance on property investments and portfolio management.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>New Developments</h3>
+                    <p>Access to exclusive new build properties before public release.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International Properties</h3>
+                    <p>Premium properties and investment opportunities worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about us</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Watsons & Co made the entire process seamless. Their expertise and professionalism are unmatched."</p>
+                    <p class="author">- James Mitchell</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Found our dream home with their guidance. Highly recommend for any luxury property purchase."</p>
+                    <p class="author">- Elizabeth & David Thompson</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Outstanding service from start to finish. The team's attention to detail is remarkable."</p>
+                    <p class="author">- Sarah Williams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let us help you find your perfect property</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Mayfair Lane<br>London, SW1A 1AA<br>England</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+44 (0) 20 7946 0958</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@watsonsandco.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: By Appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Watsons & Co</h4>
+                    <p>Leading luxury estate agents serving discerning clients worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Property Valuation</a></li>
+                        <li><a href="#services">Sales & Lettings</a></li>
+                        <li><a href="#services">Investment Advice</a></li>
+                        <li><a href="#services">New Developments</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive property updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Watsons & Co. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
