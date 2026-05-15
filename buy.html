@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties for Sale — Watsons &amp; Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-status="sale">
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                </ul>
+            </div>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-main">WATSONS &amp; CO</span>
+                    <span class="logo-sub">Estate Agents</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <p class="section-label">Newcastle &amp; Northumberland</p>
+        <h1>Properties for Sale</h1>
+    </div>
+
+    <section class="listings-page">
+        <div class="container">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="sep">/</span>
+                <span class="crumb-current">Buy</span>
+            </nav>
+
+            <div class="filter-bar">
+                <div class="filter-field">
+                    <label for="fArea">Area</label>
+                    <select id="fArea">
+                        <option value="">All Areas</option>
+                        <option>Jesmond</option>
+                        <option>Gosforth</option>
+                        <option>Ponteland</option>
+                        <option>Northumberland</option>
+                        <option>Heaton</option>
+                        <option>Sandyford</option>
+                    </select>
+                </div>
+                <div class="filter-field">
+                    <label for="fPrice">Max Price</label>
+                    <select id="fPrice">
+                        <option value="">No Limit</option>
+                        <option value="500000">£500,000</option>
+                        <option value="750000">£750,000</option>
+                        <option value="1000000">£1,000,000</option>
+                        <option value="1500000">£1,500,000</option>
+                        <option value="2000000">£2,000,000</option>
+                    </select>
+                </div>
+                <div class="filter-field">
+                    <label for="fBeds">Min Bedrooms</label>
+                    <select id="fBeds">
+                        <option value="">Any</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                    </select>
+                </div>
+                <button class="filter-reset" id="fReset">
+                    <i class="fas fa-times"></i> Clear
+                </button>
+            </div>
+
+            <div class="listings-meta">
+                <p class="listings-count"><strong id="listingCount">0</strong> properties found</p>
+            </div>
+
+            <div class="properties-grid" id="listingsGrid">
+                <!-- Populated by script.js -->
+            </div>
+
+            <div id="noResults" class="no-results">
+                <p>No properties match your search. Try adjusting your filters.</p>
+                <button class="btn-outline" id="fReset2">Clear Filters</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <span class="logo-main">WATSONS &amp; CO</span>
+                <span class="logo-sub">Estate Agents</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-col">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="buy.html">Properties for Sale</a></li>
+                    <li><a href="rent.html">Properties to Let</a></li>
+                    <li><a href="buy.html">New Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Sales &amp; Acquisitions</a></li>
+                    <li><a href="services.html">Lettings &amp; Management</a></li>
+                    <li><a href="services.html">Property Valuation</a></li>
+                    <li><a href="services.html">Investment Advisory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Areas</h4>
+                <ul>
+                    <li><a href="buy.html">Jesmond</a></li>
+                    <li><a href="buy.html">Gosforth</a></li>
+                    <li><a href="buy.html">Ponteland</a></li>
+                    <li><a href="buy.html">Northumberland</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Watsons &amp; Co. All rights reserved. Newcastle upon Tyne.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms &amp; Conditions</a>
+                <span>·</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="property-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('fReset2')?.addEventListener('click', () => {
+            document.getElementById('fReset')?.click();
+        });
+    </script>
+</body>
+</html>

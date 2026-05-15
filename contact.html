@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us — Watsons &amp; Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="contact">
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                </ul>
+            </div>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-main">WATSONS &amp; CO</span>
+                    <span class="logo-sub">Estate Agents</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-banner">
+        <p class="section-label">We'd Love to Hear From You</p>
+        <h1>Get In Touch</h1>
+    </div>
+
+    <section class="contact-standalone">
+        <div class="container">
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="sep">/</span>
+                <span class="crumb-current">Contact</span>
+            </nav>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="section-label">Our Office</p>
+                    <h2>Let's Find Your<br><em>Perfect Home</em></h2>
+                    <p class="contact-intro">Whether you are buying, selling, or simply seeking advice, our team is here to guide you every step of the way. We'd love to hear about your requirements.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Office</strong>
+                                <p>14 Grey Street<br>Newcastle upon Tyne, NE1 6AE</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Telephone</strong>
+                                <p>+44 (0) 191 946 0123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>hello@watsonsandco.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <p>Mon–Fri: 9:00am – 6:00pm<br>Saturday: 10:00am – 4:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>14 Grey Street, Newcastle NE1 6AE</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="James" required>
+                        </div>
+                        <div class="form-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Mitchell" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="james@example.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Telephone</label>
+                        <input type="tel" placeholder="+44 (0) 7700 900000">
+                    </div>
+                    <div class="form-field">
+                        <label>How can we help?</label>
+                        <select>
+                            <option value="">Please select...</option>
+                            <option>I would like to buy a property</option>
+                            <option>I would like to sell a property</option>
+                            <option>I would like to let a property</option>
+                            <option>I need a property valuation</option>
+                            <option>Investment advice</option>
+                            <option>General enquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label>Message</label>
+                        <textarea rows="6" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-solid btn-full">Send Enquiry</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <span class="logo-main">WATSONS &amp; CO</span>
+                <span class="logo-sub">Estate Agents</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-col">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="buy.html">Properties for Sale</a></li>
+                    <li><a href="rent.html">Properties to Let</a></li>
+                    <li><a href="buy.html">New Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Sales &amp; Acquisitions</a></li>
+                    <li><a href="services.html">Lettings &amp; Management</a></li>
+                    <li><a href="services.html">Property Valuation</a></li>
+                    <li><a href="services.html">Investment Advisory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Areas</h4>
+                <ul>
+                    <li><a href="buy.html">Jesmond</a></li>
+                    <li><a href="buy.html">Gosforth</a></li>
+                    <li><a href="buy.html">Ponteland</a></li>
+                    <li><a href="buy.html">Northumberland</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Watsons &amp; Co. All rights reserved. Newcastle upon Tyne.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms &amp; Conditions</a>
+                <span>·</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="property-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

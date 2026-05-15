@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watsons &amp; Co — Estate Agents, Newcastle upon Tyne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- property-data.js not needed on home page but kept for consistency -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                </ul>
+            </div>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-main">WATSONS &amp; CO</span>
+                    <span class="logo-sub">Estate Agents</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&h=1200&fit=crop" alt="Luxury property" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Newcastle upon Tyne's Premier Estate Agent</p>
+            <h1 class="hero-headline">Your Perfect<br><em>Home Awaits</em></h1>
+            <a href="buy.html" class="hero-cta">Explore Properties</a>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <div class="search-tabs">
+            <button class="tab-btn active" data-tab="buy">Buy</button>
+            <button class="tab-btn" data-tab="rent">Rent</button>
+        </div>
+        <div class="search-form">
+            <div class="search-field">
+                <label>Location</label>
+                <input type="text" placeholder="Area, street or postcode">
+            </div>
+            <div class="search-divider"></div>
+            <div class="search-field">
+                <label>Property Type</label>
+                <select>
+                    <option value="">Any</option>
+                    <option>Detached House</option>
+                    <option>Semi-Detached</option>
+                    <option>Terraced</option>
+                    <option>Flat / Apartment</option>
+                    <option>Townhouse</option>
+                </select>
+            </div>
+            <div class="search-divider"></div>
+            <div class="search-field">
+                <label>Max Price</label>
+                <select>
+                    <option value="">No Limit</option>
+                    <option>£300,000</option>
+                    <option>£500,000</option>
+                    <option>£750,000</option>
+                    <option>£1,000,000</option>
+                    <option>£2,000,000+</option>
+                </select>
+            </div>
+            <div class="search-divider"></div>
+            <div class="search-field">
+                <label>Bedrooms</label>
+                <select>
+                    <option value="">Any</option>
+                    <option>1+</option>
+                    <option>2+</option>
+                    <option>3+</option>
+                    <option>4+</option>
+                    <option>5+</option>
+                </select>
+            </div>
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+                Search
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="properties-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Our Listings</p>
+                <h2>Featured Properties</h2>
+            </div>
+
+            <div class="properties-grid">
+
+                <article class="property-card">
+                    <div class="property-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&h=500&fit=crop" alt="Edwardian Villa">
+                        <span class="prop-tag">For Sale</span>
+                    </div>
+                    <div class="property-body">
+                        <div class="property-price">£1,150,000</div>
+                        <h3 class="property-name">Edwardian Villa</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Jesmond, Newcastle NE2</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 5</span>
+                            <span><i class="fas fa-bath"></i> 3</span>
+                            <span><i class="fas fa-vector-square"></i> 3,800 sq ft</span>
+                        </div>
+                    </div>
+                    <a href="property.html?id=jesmond-villa" class="property-link">View Property <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="property-card">
+                    <div class="property-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=700&h=500&fit=crop" alt="Northumberland Manor">
+                        <span class="prop-tag">For Sale</span>
+                        <span class="prop-tag prop-tag--new">New Instruction</span>
+                    </div>
+                    <div class="property-body">
+                        <div class="property-price">£2,750,000</div>
+                        <h3 class="property-name">Northumberland Manor</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Corbridge, Northumberland</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 8</span>
+                            <span><i class="fas fa-bath"></i> 6</span>
+                            <span><i class="fas fa-vector-square"></i> 11,200 sq ft</span>
+                        </div>
+                    </div>
+                    <a href="property.html?id=northumberland-manor" class="property-link">View Property <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="property-card">
+                    <div class="property-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=700&h=500&fit=crop" alt="Quayside Apartment">
+                        <span class="prop-tag prop-tag--rent">To Let</span>
+                    </div>
+                    <div class="property-body">
+                        <div class="property-price">£2,800 pcm</div>
+                        <h3 class="property-name">Quayside Apartment</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Quayside, Newcastle NE1</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 2</span>
+                            <span><i class="fas fa-bath"></i> 2</span>
+                            <span><i class="fas fa-vector-square"></i> 1,200 sq ft</span>
+                        </div>
+                    </div>
+                    <a href="property.html?id=quayside-apartment" class="property-link">View Property <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="property-card">
+                    <div class="property-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&h=500&fit=crop" alt="Contemporary Residence">
+                        <span class="prop-tag">For Sale</span>
+                    </div>
+                    <div class="property-body">
+                        <div class="property-price">£1,450,000</div>
+                        <h3 class="property-name">Contemporary Residence</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Ponteland, NE20</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 5</span>
+                            <span><i class="fas fa-bath"></i> 4</span>
+                            <span><i class="fas fa-vector-square"></i> 4,600 sq ft</span>
+                        </div>
+                    </div>
+                    <a href="property.html?id=contemporary-ponteland" class="property-link">View Property <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="property-card">
+                    <div class="property-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=700&h=500&fit=crop" alt="Victorian Townhouse">
+                        <span class="prop-tag">For Sale</span>
+                        <span class="prop-tag prop-tag--new">New Instruction</span>
+                    </div>
+                    <div class="property-body">
+                        <div class="property-price">£895,000</div>
+                        <h3 class="property-name">Victorian Townhouse</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Gosforth, Newcastle NE3</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 4</span>
+                            <span><i class="fas fa-bath"></i> 3</span>
+                            <span><i class="fas fa-vector-square"></i> 2,800 sq ft</span>
+                        </div>
+                    </div>
+                    <a href="property.html?id=victorian-townhouse-gosforth" class="property-link">View Property <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <article class="property-card">
+                    <div class="property-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9b274b97b72f?w=700&h=500&fit=crop" alt="Tyne View Penthouse">
+                        <span class="prop-tag prop-tag--rent">To Let</span>
+                    </div>
+                    <div class="property-body">
+                        <div class="property-price">£3,500 pcm</div>
+                        <h3 class="property-name">Tyne View Penthouse</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Quayside, Newcastle NE1</p>
+                        <div class="property-meta">
+                            <span><i class="fas fa-bed"></i> 3</span>
+                            <span><i class="fas fa-bath"></i> 2</span>
+                            <span><i class="fas fa-vector-square"></i> 1,800 sq ft</span>
+                        </div>
+                    </div>
+                    <a href="property.html?id=tyne-view-penthouse" class="property-link">View Property <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+            </div>
+
+            <div class="properties-cta">
+                <a href="buy.html" class="btn-outline">View All Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Band -->
+    <section class="stats-band">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">500</div>
+                    <div class="stat-label">Properties Sold</div>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20">20</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1">1</div>
+                    <div class="stat-label">Billion in Sales</div>
+                </div>
+                <div class="stat-sep"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">98</div>
+                    <div class="stat-label">Client Satisfaction %</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=900&h=1100&fit=crop" alt="Watsons & Co Office">
+        </div>
+        <div class="about-content">
+            <p class="section-label">Who We Are</p>
+            <h2>Newcastle's Name in<br><em>Luxury Property</em></h2>
+            <p class="about-intro">Founded on a passion for exceptional homes and a commitment to unrivalled service, Watsons &amp; Co has been the defining name in luxury estate agency across Newcastle upon Tyne and Northumberland for over two decades.</p>
+            <p class="about-body">From grand period homes in Jesmond and Gosforth to contemporary penthouses overlooking the Tyne, and sweeping country estates across Northumberland, we handle every property with the care and discretion our clients demand. Our deep knowledge of the local market ensures every transaction — whether buying, selling or letting — is handled with absolute precision.</p>
+            <div class="about-signature">
+                <div class="signature-line">— Max Watson, Founder</div>
+            </div>
+            <a href="contact.html" class="btn-solid">Arrange a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">What We Do</p>
+                <h2>Our Services</h2>
+            </div>
+
+            <div class="services-list">
+
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3>Sales &amp; Acquisitions</h3>
+                        <p>Expert guidance through every stage of buying or selling a premium property across Newcastle and Northumberland. We handle every detail with discretion and precision.</p>
+                    </div>
+                    <a href="#contact" class="service-arrow"><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3>Lettings &amp; Management</h3>
+                        <p>Full-service lettings, from finding the right tenant to ongoing property management for landlords who expect the very best.</p>
+                    </div>
+                    <a href="#contact" class="service-arrow"><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3>Property Valuation</h3>
+                        <p>Precise, market-led valuations underpinned by two decades of data and unparalleled knowledge of the North East prime property market.</p>
+                    </div>
+                    <a href="#contact" class="service-arrow"><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <div class="service-content">
+                        <h3>Investment Advisory</h3>
+                        <p>Strategic advice for property investors seeking returns in the prime residential and country house sectors across Newcastle and the wider North East.</p>
+                    </div>
+                    <a href="#contact" class="service-arrow"><i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-bleed Quote Banner -->
+    <section class="quote-banner">
+        <div class="quote-bg">
+            <img src="https://images.unsplash.com/photo-1570129477492-45a003537e1f?w=1800&h=900&fit=crop" alt="Luxury Property">
+            <div class="quote-overlay"></div>
+        </div>
+        <div class="quote-content">
+            <blockquote>
+                "We don't just find you a property —<br>we find you a <em>home</em>."
+            </blockquote>
+            <cite>— Watsons &amp; Co</cite>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Client Stories</p>
+                <h2>What Our Clients Say</h2>
+            </div>
+
+            <div class="testimonials-grid">
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Watsons &amp; Co made the entire process effortless. Their expertise and calm professionalism are unlike anything we've experienced before."</p>
+                    <div class="testimonial-author">
+                        <strong>James &amp; Caroline Mitchell</strong>
+                        <span>Purchased in Jesmond, 2025</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We sold our home in three weeks at above asking price. The team's market knowledge and presentation of our property was second to none."</p>
+                    <div class="testimonial-author">
+                        <strong>Elizabeth Thompson</strong>
+                        <span>Sold in Gosforth, 2025</span>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Outstanding from start to finish. The attention to detail, the communication, and ultimately the result — truly exceptional."</p>
+                    <div class="testimonial-author">
+                        <strong>Robert &amp; Sarah Williams</strong>
+                        <span>Purchased in Ponteland, 2024</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Where We Work</p>
+                <h2>Areas We Cover</h2>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&h=400&fit=crop" alt="Jesmond">
+                    <div class="area-overlay">
+                        <h3>Jesmond</h3>
+                        <span>Newcastle's Premier Suburb</span>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=500&h=400&fit=crop" alt="Gosforth">
+                    <div class="area-overlay">
+                        <h3>Gosforth</h3>
+                        <span>Family Homes &amp; Gardens</span>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=500&h=400&fit=crop" alt="Ponteland">
+                    <div class="area-overlay">
+                        <h3>Ponteland</h3>
+                        <span>Village Living, City Close</span>
+                    </div>
+                </div>
+                <div class="area-card">
+                    <img src="https://images.unsplash.com/photo-1548704248-55f8c91d7a92?w=500&h=400&fit=crop" alt="Northumberland">
+                    <div class="area-overlay">
+                        <h3>Northumberland</h3>
+                        <span>Country Estates &amp; Rural Retreats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p class="section-label">Get In Touch</p>
+                <h2>Let's Find Your<br><em>Perfect Home</em></h2>
+                <p class="contact-intro">Whether you are buying, selling, or simply seeking advice, our team is here to guide you every step of the way.</p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Office</strong>
+                            <p>14 Grey Street<br>Newcastle upon Tyne, NE1 6AE</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Telephone</strong>
+                            <p>+44 (0) 191 946 0123</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>hello@watsonsandco.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Opening Hours</strong>
+                            <p>Mon–Fri: 9:00am – 6:00pm<br>Saturday: 10:00am – 4:00pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label>First Name</label>
+                        <input type="text" placeholder="James" required>
+                    </div>
+                    <div class="form-field">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Mitchell" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="james@example.com" required>
+                </div>
+                <div class="form-field">
+                    <label>Telephone</label>
+                    <input type="tel" placeholder="+44 (0) 7700 900000">
+                </div>
+                <div class="form-field">
+                    <label>How can we help?</label>
+                    <select>
+                        <option value="">Please select...</option>
+                        <option>I would like to buy a property</option>
+                        <option>I would like to sell a property</option>
+                        <option>I would like to let a property</option>
+                        <option>I need a property valuation</option>
+                        <option>Investment advice</option>
+                        <option>General enquiry</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn-solid btn-full">Send Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <span class="logo-main">WATSONS &amp; CO</span>
+                <span class="logo-sub">Estate Agents</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="footer-col">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="buy.html">Properties for Sale</a></li>
+                    <li><a href="rent.html">Properties to Let</a></li>
+                    <li><a href="buy.html">New Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Sales &amp; Acquisitions</a></li>
+                    <li><a href="services.html">Lettings &amp; Management</a></li>
+                    <li><a href="services.html">Property Valuation</a></li>
+                    <li><a href="services.html">Investment Advisory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Areas</h4>
+                <ul>
+                    <li><a href="buy.html">Jesmond</a></li>
+                    <li><a href="buy.html">Gosforth</a></li>
+                    <li><a href="buy.html">Ponteland</a></li>
+                    <li><a href="buy.html">Northumberland</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Watsons &amp; Co. All rights reserved. Newcastle upon Tyne.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms &amp; Conditions</a>
+                <span>·</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="property-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

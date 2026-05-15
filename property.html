@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property — Watsons &amp; Co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-page="property">
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <div class="nav-left">
+                <ul class="nav-links">
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                </ul>
+            </div>
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-main">WATSONS &amp; CO</span>
+                    <span class="logo-sub">Estate Agents</span>
+                </a>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Property content — populated by script.js -->
+    <div id="propDetailWrap">
+
+        <section class="property-page">
+            <div class="container">
+
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="sep">/</span>
+                    <a href="buy.html" id="bcStatusLink">Buy</a>
+                    <span class="sep">/</span>
+                    <span class="crumb-current" id="bcPropName">Property</span>
+                </nav>
+
+                <!-- Header -->
+                <div class="property-page-header">
+                    <span class="prop-tag" id="propTag">For Sale</span>
+                    <h1 id="propName"></h1>
+                    <div class="prop-detail-price" id="propPrice"></div>
+                    <p class="prop-detail-location" id="propLoc"></p>
+                </div>
+
+                <!-- Gallery -->
+                <div class="gallery-wrap">
+                    <div class="gallery-main">
+                        <img src="" alt="" id="galleryMain">
+                    </div>
+                    <div class="gallery-thumbs" id="galleryThumbs"></div>
+                </div>
+
+                <!-- Body: description + sidebar -->
+                <div class="prop-detail-body">
+
+                    <div class="prop-detail-main">
+                        <h2>About This Property</h2>
+                        <div id="propDesc"></div>
+
+                        <h2>Key Features</h2>
+                        <ul class="prop-features-list" id="propFeatures"></ul>
+                    </div>
+
+                    <aside class="prop-detail-aside">
+
+                        <!-- Key stats -->
+                        <div class="prop-key-stats">
+                            <div class="prop-stat">
+                                <i class="fas fa-bed"></i>
+                                <strong id="statBeds"></strong>
+                                <span>Bedrooms</span>
+                            </div>
+                            <div class="prop-stat">
+                                <i class="fas fa-bath"></i>
+                                <strong id="statBaths"></strong>
+                                <span>Bathrooms</span>
+                            </div>
+                            <div class="prop-stat">
+                                <i class="fas fa-vector-square"></i>
+                                <strong id="statSqft"></strong>
+                                <span>Sq Ft</span>
+                            </div>
+                        </div>
+
+                        <!-- Info table -->
+                        <div class="prop-info-table">
+                            <div class="prop-info-row">
+                                <span>EPC Rating</span>
+                                <span id="infoEpc"></span>
+                            </div>
+                            <div class="prop-info-row">
+                                <span>Tenure</span>
+                                <span id="infoTenure"></span>
+                            </div>
+                            <div class="prop-info-row">
+                                <span>Council</span>
+                                <span id="infoCouncil"></span>
+                            </div>
+                        </div>
+
+                        <!-- Enquiry form -->
+                        <div class="enquiry-box">
+                            <h3>Request a Viewing</h3>
+                            <p>Speak with our team about this property.</p>
+                            <form class="enquiry-form" id="enquiryForm">
+                                <input type="hidden" id="enquiryProperty" name="property">
+                                <div class="f-field">
+                                    <label>Your Name</label>
+                                    <input type="text" placeholder="James Mitchell" required>
+                                </div>
+                                <div class="f-field">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="james@example.com" required>
+                                </div>
+                                <div class="f-field">
+                                    <label>Telephone</label>
+                                    <input type="tel" placeholder="+44 7700 900000">
+                                </div>
+                                <div class="f-field">
+                                    <label>Message</label>
+                                    <textarea rows="3" placeholder="I'd like to arrange a viewing..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-solid btn-full">Send Enquiry</button>
+                            </form>
+                        </div>
+
+                    </aside>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Similar properties -->
+        <section class="similar-section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-label">You May Also Like</p>
+                    <h2>Similar Properties</h2>
+                </div>
+                <div class="similar-grid properties-grid" id="similarGrid"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Image gallery">
+        <button class="lightbox-close" id="lbClose" aria-label="Close"><i class="fas fa-times"></i></button>
+        <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Property photo">
+        <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <span class="logo-main">WATSONS &amp; CO</span>
+                <span class="logo-sub">Estate Agents</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-col">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="buy.html">Properties for Sale</a></li>
+                    <li><a href="rent.html">Properties to Let</a></li>
+                    <li><a href="buy.html">New Instructions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Sales &amp; Acquisitions</a></li>
+                    <li><a href="services.html">Lettings &amp; Management</a></li>
+                    <li><a href="services.html">Property Valuation</a></li>
+                    <li><a href="services.html">Investment Advisory</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Areas</h4>
+                <ul>
+                    <li><a href="buy.html">Jesmond</a></li>
+                    <li><a href="buy.html">Gosforth</a></li>
+                    <li><a href="buy.html">Ponteland</a></li>
+                    <li><a href="buy.html">Northumberland</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Watsons &amp; Co. All rights reserved. Newcastle upon Tyne.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span>·</span>
+                <a href="#">Terms &amp; Conditions</a>
+                <span>·</span>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="property-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
